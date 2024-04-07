@@ -33,4 +33,8 @@ python main.py --exp_name=DD_Glo --dataset=DD --model=SAGPooling_Global
 python main.py --exp_name=PROTEINS_Hie --dataset=PROTEINS --model=SAGPooling_Hierarchical
 ```
 
-3.实验结果（8:1:1划分数据集，只做了一次实验）
+3.实验结果（8:1:1划分数据集，只做了一次实验的准确率，保留两位小数）
+| **DD** | **MUTAG** | **NCI1** | **Value** | **Value** |
+|:-------------|:------------:|:------------:|:------------:|:------------:|
+| SAGPooling_Global       |  73.11  |  80.00  |  69.10  |  74.40  |  73.21  |
+| SAGPooling_Hierarchical |  67.23  |  70.00  |  66.18  |  70.77  |  69.64  |
