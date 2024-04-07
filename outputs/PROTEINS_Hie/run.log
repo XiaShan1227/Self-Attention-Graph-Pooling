@@ -1,0 +1,324 @@
++-----------------+-------------------------+
+|    Parameter    |          Value          |
++=================+=========================+
+| Batch size      | 128                     |
++-----------------+-------------------------+
+| Dataset         | PROTEINS                |
++-----------------+-------------------------+
+| Dropout ratio   | 0.5                     |
++-----------------+-------------------------+
+| Epochs          | 10000                   |
++-----------------+-------------------------+
+| Exp name        | PROTEINS_Hie            |
++-----------------+-------------------------+
+| Gpu index       | 0                       |
++-----------------+-------------------------+
+| Hid             | 128                     |
++-----------------+-------------------------+
+| Lr              | 0.0005                  |
++-----------------+-------------------------+
+| Model           | SAGPooling_Hierarchical |
++-----------------+-------------------------+
+| Patience        | 40                      |
++-----------------+-------------------------+
+| Pooling ratio   | 0.5                     |
++-----------------+-------------------------+
+| Seed            | 16                      |
++-----------------+-------------------------+
+| Test batch size | 1                       |
++-----------------+-------------------------+
+| Weight decay    | 0.0001                  |
++-----------------+-------------------------+
+Using GPU: 0
+SAGPooling_Hierarchical(
+  (conv1): GCNConv(3, 128)
+  (conv2): GCNConv(128, 128)
+  (conv3): GCNConv(128, 128)
+  (pool): SAGPooling(GCNConv, 128, ratio=0.5, multiplier=1.0)
+  (lin1): Linear(in_features=256, out_features=128, bias=True)
+  (lin2): Linear(in_features=128, out_features=64, bias=True)
+  (classifier): Linear(in_features=64, out_features=2, bias=True)
+)
+Model Parameter: 74948
+Using Adam
+
+Epoch #000, Train_Loss: [0.7087, 0.7102, 0.7024, 0.7183, 0.7110, 0.7028, 0.7127]
+Val_Loss: 0.704090, Val_Acc: 0.414414
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #001, Train_Loss: [0.7131, 0.7008, 0.7067, 0.6980, 0.6963, 0.6954, 0.6975]
+Val_Loss: 0.695211, Val_Acc: 0.414414
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #002, Train_Loss: [0.6981, 0.6934, 0.6918, 0.6918, 0.6892, 0.6887, 0.6852]
+Val_Loss: 0.684524, Val_Acc: 0.585586
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #003, Train_Loss: [0.6837, 0.6849, 0.6784, 0.6759, 0.6742, 0.6764, 0.6942]
+Val_Loss: 0.672522, Val_Acc: 0.585586
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #004, Train_Loss: [0.6788, 0.6683, 0.6650, 0.6476, 0.6737, 0.6729, 0.6708]
+Val_Loss: 0.661927, Val_Acc: 0.585586
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #005, Train_Loss: [0.6421, 0.6932, 0.6475, 0.6510, 0.6698, 0.6528, 0.6746]
+Val_Loss: 0.658329, Val_Acc: 0.585586
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #006, Train_Loss: [0.6338, 0.6554, 0.6894, 0.6351, 0.6777, 0.6655, 0.6612]
+Val_Loss: 0.654352, Val_Acc: 0.585586
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #007, Train_Loss: [0.6567, 0.6399, 0.6513, 0.7172, 0.6459, 0.6563, 0.6255]
+Val_Loss: 0.651773, Val_Acc: 0.585586
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #008, Train_Loss: [0.6309, 0.6792, 0.6582, 0.6590, 0.6494, 0.6572, 0.6384]
+Val_Loss: 0.647984, Val_Acc: 0.594595
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #009, Train_Loss: [0.6527, 0.6377, 0.6091, 0.6600, 0.6326, 0.7015, 0.6530]
+Val_Loss: 0.643511, Val_Acc: 0.621622
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #010, Train_Loss: [0.6480, 0.6337, 0.6259, 0.6666, 0.6256, 0.6855, 0.6631]
+Val_Loss: 0.639398, Val_Acc: 0.621622
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #011, Train_Loss: [0.6636, 0.6187, 0.6660, 0.6787, 0.6577, 0.6170, 0.6212]
+Val_Loss: 0.636795, Val_Acc: 0.675676
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #012, Train_Loss: [0.6491, 0.6332, 0.6744, 0.6269, 0.6713, 0.6123, 0.6264]
+Val_Loss: 0.630670, Val_Acc: 0.666667
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #013, Train_Loss: [0.6576, 0.5886, 0.6387, 0.6462, 0.6513, 0.6436, 0.6445]
+Val_Loss: 0.624470, Val_Acc: 0.675676
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #014, Train_Loss: [0.6098, 0.6431, 0.6496, 0.6402, 0.6191, 0.6812, 0.6184]
+Val_Loss: 0.618135, Val_Acc: 0.702703
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #015, Train_Loss: [0.6105, 0.6437, 0.5961, 0.6522, 0.6524, 0.6273, 0.6387]
+Val_Loss: 0.610969, Val_Acc: 0.693694
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #016, Train_Loss: [0.6487, 0.6353, 0.6353, 0.5991, 0.6212, 0.6091, 0.6322]
+Val_Loss: 0.600790, Val_Acc: 0.675676
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #017, Train_Loss: [0.6075, 0.5887, 0.6311, 0.5900, 0.6194, 0.6203, 0.6782]
+Val_Loss: 0.584459, Val_Acc: 0.675676
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #018, Train_Loss: [0.6287, 0.5947, 0.6252, 0.5856, 0.6025, 0.6157, 0.5893]
+Val_Loss: 0.553617, Val_Acc: 0.729730
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #019, Train_Loss: [0.6170, 0.5685, 0.5745, 0.5674, 0.6341, 0.6009, 0.5808]
+Val_Loss: 0.519944, Val_Acc: 0.738739
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #020, Train_Loss: [0.6163, 0.5656, 0.5960, 0.5933, 0.4754, 0.6007, 0.5808]
+Val_Loss: 0.504933, Val_Acc: 0.774775
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #021, Train_Loss: [0.6198, 0.5665, 0.5721, 0.5984, 0.5580, 0.5696, 0.5519]
+Val_Loss: 0.501438, Val_Acc: 0.738739
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #022, Train_Loss: [0.5268, 0.5609, 0.5019, 0.5954, 0.5906, 0.5973, 0.6439]
+Val_Loss: 0.489560, Val_Acc: 0.783784
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #023, Train_Loss: [0.6064, 0.6185, 0.5486, 0.5821, 0.5816, 0.5566, 0.5455]
+Val_Loss: 0.512752, Val_Acc: 0.774775
+
+Epoch #024, Train_Loss: [0.5131, 0.5787, 0.5834, 0.5235, 0.5765, 0.5783, 0.6279]
+Val_Loss: 0.494681, Val_Acc: 0.774775
+
+Epoch #025, Train_Loss: [0.5342, 0.5272, 0.6436, 0.5902, 0.5502, 0.6111, 0.5640]
+Val_Loss: 0.498678, Val_Acc: 0.783784
+
+Epoch #026, Train_Loss: [0.5635, 0.5760, 0.5597, 0.5603, 0.5907, 0.5436, 0.5712]
+Val_Loss: 0.503713, Val_Acc: 0.783784
+
+Epoch #027, Train_Loss: [0.5698, 0.5463, 0.6001, 0.5061, 0.5880, 0.6047, 0.5490]
+Val_Loss: 0.498952, Val_Acc: 0.792793
+
+Epoch #028, Train_Loss: [0.5521, 0.5563, 0.6128, 0.5138, 0.4959, 0.5853, 0.6358]
+Val_Loss: 0.496586, Val_Acc: 0.783784
+
+Epoch #029, Train_Loss: [0.5951, 0.5242, 0.5903, 0.5277, 0.5626, 0.6082, 0.5750]
+Val_Loss: 0.497393, Val_Acc: 0.765766
+
+Epoch #030, Train_Loss: [0.5750, 0.5902, 0.5261, 0.5943, 0.5614, 0.5387, 0.5873]
+Val_Loss: 0.494259, Val_Acc: 0.783784
+
+Epoch #031, Train_Loss: [0.5431, 0.6367, 0.5560, 0.5314, 0.6107, 0.5954, 0.5250]
+Val_Loss: 0.501260, Val_Acc: 0.747748
+
+Epoch #032, Train_Loss: [0.5820, 0.5766, 0.5491, 0.5357, 0.5839, 0.5538, 0.5842]
+Val_Loss: 0.497329, Val_Acc: 0.774775
+
+Epoch #033, Train_Loss: [0.5978, 0.5906, 0.4711, 0.5932, 0.6281, 0.4674, 0.6189]
+Val_Loss: 0.494639, Val_Acc: 0.792793
+
+Epoch #034, Train_Loss: [0.6142, 0.5714, 0.5046, 0.5669, 0.5548, 0.5445, 0.5810]
+Val_Loss: 0.493939, Val_Acc: 0.774775
+
+Epoch #035, Train_Loss: [0.5239, 0.5793, 0.6299, 0.6006, 0.5380, 0.4951, 0.5984]
+Val_Loss: 0.496108, Val_Acc: 0.792793
+
+Epoch #036, Train_Loss: [0.5482, 0.6125, 0.6305, 0.5260, 0.6033, 0.5358, 0.5158]
+Val_Loss: 0.499922, Val_Acc: 0.774775
+
+Epoch #037, Train_Loss: [0.5642, 0.5326, 0.5468, 0.5656, 0.5881, 0.5499, 0.5746]
+Val_Loss: 0.497246, Val_Acc: 0.783784
+
+Epoch #038, Train_Loss: [0.5620, 0.5991, 0.5141, 0.5560, 0.5835, 0.5468, 0.5745]
+Val_Loss: 0.491874, Val_Acc: 0.783784
+
+Epoch #039, Train_Loss: [0.5302, 0.5627, 0.5222, 0.5817, 0.5309, 0.6530, 0.5152]
+Val_Loss: 0.498009, Val_Acc: 0.783784
+
+Epoch #040, Train_Loss: [0.5670, 0.5868, 0.5861, 0.5561, 0.5736, 0.5418, 0.5171]
+Val_Loss: 0.498251, Val_Acc: 0.783784
+
+Epoch #041, Train_Loss: [0.5759, 0.5622, 0.5971, 0.5370, 0.5606, 0.4914, 0.5582]
+Val_Loss: 0.492010, Val_Acc: 0.792793
+
+Epoch #042, Train_Loss: [0.6018, 0.5540, 0.4828, 0.5590, 0.5378, 0.5772, 0.5819]
+Val_Loss: 0.488560, Val_Acc: 0.783784
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+
+Epoch #043, Train_Loss: [0.5399, 0.6289, 0.5595, 0.5865, 0.5505, 0.5690, 0.4610]
+Val_Loss: 0.492232, Val_Acc: 0.792793
+
+Epoch #044, Train_Loss: [0.5723, 0.5923, 0.5246, 0.5373, 0.5129, 0.6049, 0.5593]
+Val_Loss: 0.491324, Val_Acc: 0.783784
+
+Epoch #045, Train_Loss: [0.5518, 0.6022, 0.5071, 0.5175, 0.5961, 0.5695, 0.5734]
+Val_Loss: 0.492873, Val_Acc: 0.792793
+
+Epoch #046, Train_Loss: [0.5030, 0.5811, 0.5807, 0.6179, 0.5537, 0.5478, 0.5133]
+Val_Loss: 0.495826, Val_Acc: 0.792793
+
+Epoch #047, Train_Loss: [0.5608, 0.5756, 0.4866, 0.5531, 0.6016, 0.5788, 0.5154]
+Val_Loss: 0.492263, Val_Acc: 0.801802
+
+Epoch #048, Train_Loss: [0.5426, 0.5593, 0.5525, 0.4867, 0.5425, 0.6828, 0.4980]
+Val_Loss: 0.490381, Val_Acc: 0.783784
+
+Epoch #049, Train_Loss: [0.5602, 0.5538, 0.5706, 0.5885, 0.5184, 0.5637, 0.5522]
+Val_Loss: 0.495808, Val_Acc: 0.774775
+
+Epoch #050, Train_Loss: [0.5903, 0.5586, 0.5487, 0.5864, 0.5300, 0.5852, 0.5359]
+Val_Loss: 0.499027, Val_Acc: 0.783784
+
+Epoch #051, Train_Loss: [0.5574, 0.5505, 0.5321, 0.5984, 0.5546, 0.5988, 0.4913]
+Val_Loss: 0.499868, Val_Acc: 0.783784
+
+Epoch #052, Train_Loss: [0.5332, 0.5064, 0.5402, 0.6265, 0.5647, 0.5625, 0.5657]
+Val_Loss: 0.493030, Val_Acc: 0.792793
+
+Epoch #053, Train_Loss: [0.5952, 0.5084, 0.4935, 0.5709, 0.6020, 0.6103, 0.4810]
+Val_Loss: 0.499034, Val_Acc: 0.783784
+
+Epoch #054, Train_Loss: [0.4865, 0.6475, 0.5420, 0.6195, 0.5191, 0.5368, 0.5086]
+Val_Loss: 0.500102, Val_Acc: 0.801802
+
+Epoch #055, Train_Loss: [0.5482, 0.5569, 0.5613, 0.4685, 0.5349, 0.5822, 0.6309]
+Val_Loss: 0.500920, Val_Acc: 0.792793
+
+Epoch #056, Train_Loss: [0.5472, 0.5216, 0.5002, 0.5326, 0.6711, 0.5183, 0.5334]
+Val_Loss: 0.498393, Val_Acc: 0.801802
+
+Epoch #057, Train_Loss: [0.5330, 0.5351, 0.5613, 0.5454, 0.5468, 0.5596, 0.5734]
+Val_Loss: 0.497441, Val_Acc: 0.783784
+
+Epoch #058, Train_Loss: [0.5494, 0.4554, 0.5799, 0.5709, 0.5155, 0.5532, 0.5809]
+Val_Loss: 0.500527, Val_Acc: 0.792793
+
+Epoch #059, Train_Loss: [0.6304, 0.4912, 0.4792, 0.5658, 0.5474, 0.5493, 0.5531]
+Val_Loss: 0.504663, Val_Acc: 0.792793
+
+Epoch #060, Train_Loss: [0.5852, 0.5640, 0.4986, 0.5630, 0.6067, 0.5202, 0.5364]
+Val_Loss: 0.502291, Val_Acc: 0.801802
+
+Epoch #061, Train_Loss: [0.5422, 0.5268, 0.5813, 0.5545, 0.5517, 0.5343, 0.5688]
+Val_Loss: 0.507041, Val_Acc: 0.792793
+
+Epoch #062, Train_Loss: [0.5657, 0.4923, 0.5820, 0.5574, 0.5388, 0.5529, 0.5662]
+Val_Loss: 0.506921, Val_Acc: 0.810811
+
+Epoch #063, Train_Loss: [0.4731, 0.5045, 0.5006, 0.5085, 0.5747, 0.6768, 0.6252]
+Val_Loss: 0.503664, Val_Acc: 0.774775
+
+Epoch #064, Train_Loss: [0.5009, 0.6298, 0.5919, 0.5735, 0.4988, 0.5153, 0.5004]
+Val_Loss: 0.513072, Val_Acc: 0.783784
+
+Epoch #065, Train_Loss: [0.6145, 0.5124, 0.5268, 0.5758, 0.6019, 0.5088, 0.4651]
+Val_Loss: 0.508081, Val_Acc: 0.783784
+
+Epoch #066, Train_Loss: [0.5504, 0.5548, 0.6462, 0.5547, 0.4773, 0.5267, 0.4911]
+Val_Loss: 0.504342, Val_Acc: 0.792793
+
+Epoch #067, Train_Loss: [0.5868, 0.5428, 0.5302, 0.5249, 0.5176, 0.5222, 0.6000]
+Val_Loss: 0.504808, Val_Acc: 0.783784
+
+Epoch #068, Train_Loss: [0.4734, 0.6232, 0.5580, 0.4983, 0.4930, 0.5646, 0.5468]
+Val_Loss: 0.511090, Val_Acc: 0.792793
+
+Epoch #069, Train_Loss: [0.5132, 0.5032, 0.5564, 0.5835, 0.5846, 0.5365, 0.5059]
+Val_Loss: 0.510361, Val_Acc: 0.792793
+
+Epoch #070, Train_Loss: [0.5667, 0.4948, 0.4867, 0.5083, 0.5927, 0.5419, 0.5988]
+Val_Loss: 0.511849, Val_Acc: 0.792793
+
+Epoch #071, Train_Loss: [0.5373, 0.5209, 0.4987, 0.5603, 0.5596, 0.5696, 0.5241]
+Val_Loss: 0.515039, Val_Acc: 0.783784
+
+Epoch #072, Train_Loss: [0.5711, 0.5786, 0.5787, 0.5286, 0.5399, 0.4816, 0.5440]
+Val_Loss: 0.515784, Val_Acc: 0.783784
+
+Epoch #073, Train_Loss: [0.4833, 0.5318, 0.5589, 0.5189, 0.5730, 0.5295, 0.5875]
+Val_Loss: 0.511603, Val_Acc: 0.783784
+
+Epoch #074, Train_Loss: [0.4997, 0.5350, 0.5725, 0.5099, 0.5288, 0.5585, 0.5263]
+Val_Loss: 0.516821, Val_Acc: 0.783784
+
+Epoch #075, Train_Loss: [0.4734, 0.5154, 0.5628, 0.5478, 0.5801, 0.5092, 0.5867]
+Val_Loss: 0.516208, Val_Acc: 0.792793
+
+Epoch #076, Train_Loss: [0.6084, 0.5304, 0.5465, 0.4939, 0.5266, 0.5027, 0.5540]
+Val_Loss: 0.520393, Val_Acc: 0.792793
+
+Epoch #077, Train_Loss: [0.5443, 0.4956, 0.5360, 0.5810, 0.5706, 0.5165, 0.4993]
+Val_Loss: 0.513613, Val_Acc: 0.783784
+
+Epoch #078, Train_Loss: [0.5221, 0.5275, 0.5046, 0.4925, 0.6089, 0.5707, 0.5154]
+Val_Loss: 0.521038, Val_Acc: 0.765766
+
+Epoch #079, Train_Loss: [0.5441, 0.5423, 0.5132, 0.5146, 0.5386, 0.5434, 0.5945]
+Val_Loss: 0.519422, Val_Acc: 0.792793
+
+Epoch #080, Train_Loss: [0.4689, 0.5379, 0.5756, 0.5331, 0.5476, 0.4968, 0.5843]
+Val_Loss: 0.526559, Val_Acc: 0.783784
+
+Epoch #081, Train_Loss: [0.4962, 0.5648, 0.5685, 0.5023, 0.5640, 0.4279, 0.5573]
+Val_Loss: 0.523321, Val_Acc: 0.783784
+
+Epoch #082, Train_Loss: [0.5840, 0.5479, 0.5003, 0.5032, 0.5176, 0.5457, 0.5115]
+Val_Loss: 0.517582, Val_Acc: 0.783784
+
+Epoch #083, Train_Loss: [0.4560, 0.5795, 0.5788, 0.5687, 0.5729, 0.5031, 0.4695]
+Val_Loss: 0.523851, Val_Acc: 0.774775
+
+********** TEST START **********
+Reload Best Model
+The current best model is saved in: ******** outputs/PROTEINS_Hie/model.pth *********
+TEST :: Test_Acc: 0.696429

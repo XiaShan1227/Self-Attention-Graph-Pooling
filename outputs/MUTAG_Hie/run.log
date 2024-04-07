@@ -1,0 +1,175 @@
++-----------------+-------------------------+
+|    Parameter    |          Value          |
++=================+=========================+
+| Batch size      | 128                     |
++-----------------+-------------------------+
+| Dataset         | MUTAG                   |
++-----------------+-------------------------+
+| Dropout ratio   | 0.5                     |
++-----------------+-------------------------+
+| Epochs          | 10000                   |
++-----------------+-------------------------+
+| Exp name        | MUTAG_Hie               |
++-----------------+-------------------------+
+| Gpu index       | 0                       |
++-----------------+-------------------------+
+| Hid             | 128                     |
++-----------------+-------------------------+
+| Lr              | 0.0005                  |
++-----------------+-------------------------+
+| Model           | SAGPooling_Hierarchical |
++-----------------+-------------------------+
+| Patience        | 40                      |
++-----------------+-------------------------+
+| Pooling ratio   | 0.5                     |
++-----------------+-------------------------+
+| Seed            | 16                      |
++-----------------+-------------------------+
+| Test batch size | 1                       |
++-----------------+-------------------------+
+| Weight decay    | 0.0001                  |
++-----------------+-------------------------+
+Using GPU: 0
+SAGPooling_Hierarchical(
+  (conv1): GCNConv(7, 128)
+  (conv2): GCNConv(128, 128)
+  (conv3): GCNConv(128, 128)
+  (pool): SAGPooling(GCNConv, 128, ratio=0.5, multiplier=1.0)
+  (lin1): Linear(in_features=256, out_features=128, bias=True)
+  (lin2): Linear(in_features=128, out_features=64, bias=True)
+  (classifier): Linear(in_features=64, out_features=2, bias=True)
+)
+Model Parameter: 75460
+Using Adam
+
+Epoch #000, Train_Loss: [0.6914, 0.6902]
+Val_Loss: 0.693180, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Hie/model.pth *********
+
+Epoch #001, Train_Loss: [0.6888, 0.6898]
+Val_Loss: 0.693223, Val_Acc: 0.500000
+
+Epoch #002, Train_Loss: [0.6866, 0.6897]
+Val_Loss: 0.693294, Val_Acc: 0.500000
+
+Epoch #003, Train_Loss: [0.6846, 0.6856]
+Val_Loss: 0.693388, Val_Acc: 0.500000
+
+Epoch #004, Train_Loss: [0.6843, 0.6746]
+Val_Loss: 0.693506, Val_Acc: 0.500000
+
+Epoch #005, Train_Loss: [0.6788, 0.6911]
+Val_Loss: 0.693657, Val_Acc: 0.500000
+
+Epoch #006, Train_Loss: [0.6789, 0.6716]
+Val_Loss: 0.693818, Val_Acc: 0.500000
+
+Epoch #007, Train_Loss: [0.6766, 0.6740]
+Val_Loss: 0.693980, Val_Acc: 0.500000
+
+Epoch #008, Train_Loss: [0.6764, 0.6542]
+Val_Loss: 0.694237, Val_Acc: 0.500000
+
+Epoch #009, Train_Loss: [0.6677, 0.6818]
+Val_Loss: 0.694621, Val_Acc: 0.500000
+
+Epoch #010, Train_Loss: [0.6704, 0.6626]
+Val_Loss: 0.695039, Val_Acc: 0.500000
+
+Epoch #011, Train_Loss: [0.6655, 0.6733]
+Val_Loss: 0.695627, Val_Acc: 0.500000
+
+Epoch #012, Train_Loss: [0.6658, 0.6515]
+Val_Loss: 0.696294, Val_Acc: 0.500000
+
+Epoch #013, Train_Loss: [0.6656, 0.6306]
+Val_Loss: 0.696990, Val_Acc: 0.500000
+
+Epoch #014, Train_Loss: [0.6633, 0.6271]
+Val_Loss: 0.697837, Val_Acc: 0.500000
+
+Epoch #015, Train_Loss: [0.6581, 0.6376]
+Val_Loss: 0.698927, Val_Acc: 0.500000
+
+Epoch #016, Train_Loss: [0.6598, 0.6163]
+Val_Loss: 0.700287, Val_Acc: 0.500000
+
+Epoch #017, Train_Loss: [0.6443, 0.6777]
+Val_Loss: 0.701860, Val_Acc: 0.500000
+
+Epoch #018, Train_Loss: [0.6538, 0.5994]
+Val_Loss: 0.703743, Val_Acc: 0.500000
+
+Epoch #019, Train_Loss: [0.6440, 0.6215]
+Val_Loss: 0.706118, Val_Acc: 0.500000
+
+Epoch #020, Train_Loss: [0.6433, 0.6000]
+Val_Loss: 0.709257, Val_Acc: 0.500000
+
+Epoch #021, Train_Loss: [0.6250, 0.7026]
+Val_Loss: 0.712731, Val_Acc: 0.500000
+
+Epoch #022, Train_Loss: [0.6197, 0.7013]
+Val_Loss: 0.715629, Val_Acc: 0.500000
+
+Epoch #023, Train_Loss: [0.6324, 0.5799]
+Val_Loss: 0.718647, Val_Acc: 0.500000
+
+Epoch #024, Train_Loss: [0.6280, 0.5715]
+Val_Loss: 0.722911, Val_Acc: 0.500000
+
+Epoch #025, Train_Loss: [0.6258, 0.5881]
+Val_Loss: 0.728388, Val_Acc: 0.500000
+
+Epoch #026, Train_Loss: [0.6375, 0.5108]
+Val_Loss: 0.735101, Val_Acc: 0.500000
+
+Epoch #027, Train_Loss: [0.6202, 0.6263]
+Val_Loss: 0.742546, Val_Acc: 0.500000
+
+Epoch #028, Train_Loss: [0.6043, 0.6802]
+Val_Loss: 0.748791, Val_Acc: 0.500000
+
+Epoch #029, Train_Loss: [0.6147, 0.6716]
+Val_Loss: 0.751207, Val_Acc: 0.500000
+
+Epoch #030, Train_Loss: [0.5776, 0.8183]
+Val_Loss: 0.749061, Val_Acc: 0.500000
+
+Epoch #031, Train_Loss: [0.6058, 0.6244]
+Val_Loss: 0.743791, Val_Acc: 0.500000
+
+Epoch #032, Train_Loss: [0.5757, 0.7831]
+Val_Loss: 0.738021, Val_Acc: 0.500000
+
+Epoch #033, Train_Loss: [0.5856, 0.7487]
+Val_Loss: 0.731106, Val_Acc: 0.500000
+
+Epoch #034, Train_Loss: [0.5884, 0.7235]
+Val_Loss: 0.724391, Val_Acc: 0.500000
+
+Epoch #035, Train_Loss: [0.5932, 0.6671]
+Val_Loss: 0.718486, Val_Acc: 0.500000
+
+Epoch #036, Train_Loss: [0.6039, 0.6457]
+Val_Loss: 0.712506, Val_Acc: 0.500000
+
+Epoch #037, Train_Loss: [0.6258, 0.5316]
+Val_Loss: 0.708656, Val_Acc: 0.500000
+
+Epoch #038, Train_Loss: [0.5988, 0.6623]
+Val_Loss: 0.705753, Val_Acc: 0.500000
+
+Epoch #039, Train_Loss: [0.5976, 0.6227]
+Val_Loss: 0.703086, Val_Acc: 0.500000
+
+Epoch #040, Train_Loss: [0.6132, 0.5839]
+Val_Loss: 0.700962, Val_Acc: 0.500000
+
+Epoch #041, Train_Loss: [0.5927, 0.6493]
+Val_Loss: 0.699480, Val_Acc: 0.500000
+
+********** TEST START **********
+Reload Best Model
+The current best model is saved in: ******** outputs/MUTAG_Hie/model.pth *********
+TEST :: Test_Acc: 0.700000

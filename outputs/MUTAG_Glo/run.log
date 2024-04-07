@@ -1,0 +1,450 @@
++-----------------+-------------------+
+|    Parameter    |       Value       |
++=================+===================+
+| Batch size      | 128               |
++-----------------+-------------------+
+| Dataset         | MUTAG             |
++-----------------+-------------------+
+| Dropout ratio   | 0.5               |
++-----------------+-------------------+
+| Epochs          | 10000             |
++-----------------+-------------------+
+| Exp name        | MUTAG_Glo         |
++-----------------+-------------------+
+| Gpu index       | 0                 |
++-----------------+-------------------+
+| Hid             | 128               |
++-----------------+-------------------+
+| Lr              | 0.0005            |
++-----------------+-------------------+
+| Model           | SAGPooling_Global |
++-----------------+-------------------+
+| Patience        | 40                |
++-----------------+-------------------+
+| Pooling ratio   | 0.5               |
++-----------------+-------------------+
+| Seed            | 16                |
++-----------------+-------------------+
+| Test batch size | 1                 |
++-----------------+-------------------+
+| Weight decay    | 0.0001            |
++-----------------+-------------------+
+Using GPU: 0
+SAGPooling_Global(
+  (conv1): GCNConv(7, 128)
+  (conv2): GCNConv(128, 128)
+  (conv3): GCNConv(128, 128)
+  (pool): SAGPooling(GCNConv, 384, ratio=0.5, multiplier=1.0)
+  (lin1): Linear(in_features=768, out_features=128, bias=True)
+  (lin2): Linear(in_features=128, out_features=64, bias=True)
+  (classifier): Linear(in_features=64, out_features=2, bias=True)
+)
+Model Parameter: 141252
+Using Adam
+
+Epoch #000, Train_Loss: [0.7092, 0.7044]
+Val_Loss: 0.693750, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #001, Train_Loss: [0.7067, 0.7060]
+Val_Loss: 0.693335, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #002, Train_Loss: [0.7016, 0.7147]
+Val_Loss: 0.692823, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #003, Train_Loss: [0.7018, 0.6963]
+Val_Loss: 0.692294, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #004, Train_Loss: [0.6976, 0.6952]
+Val_Loss: 0.691730, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #005, Train_Loss: [0.6939, 0.6924]
+Val_Loss: 0.691178, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #006, Train_Loss: [0.6884, 0.6811]
+Val_Loss: 0.690209, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #007, Train_Loss: [0.6843, 0.6730]
+Val_Loss: 0.689212, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #008, Train_Loss: [0.6760, 0.6795]
+Val_Loss: 0.689018, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #009, Train_Loss: [0.6659, 0.6754]
+Val_Loss: 0.688859, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #010, Train_Loss: [0.6595, 0.6607]
+Val_Loss: 0.689466, Val_Acc: 0.500000
+
+Epoch #011, Train_Loss: [0.6387, 0.6621]
+Val_Loss: 0.692463, Val_Acc: 0.500000
+
+Epoch #012, Train_Loss: [0.6291, 0.6751]
+Val_Loss: 0.699246, Val_Acc: 0.500000
+
+Epoch #013, Train_Loss: [0.6184, 0.6658]
+Val_Loss: 0.709928, Val_Acc: 0.500000
+
+Epoch #014, Train_Loss: [0.6288, 0.5458]
+Val_Loss: 0.726052, Val_Acc: 0.500000
+
+Epoch #015, Train_Loss: [0.6189, 0.5639]
+Val_Loss: 0.749423, Val_Acc: 0.500000
+
+Epoch #016, Train_Loss: [0.6146, 0.5502]
+Val_Loss: 0.773896, Val_Acc: 0.500000
+
+Epoch #017, Train_Loss: [0.5892, 0.7839]
+Val_Loss: 0.776904, Val_Acc: 0.500000
+
+Epoch #018, Train_Loss: [0.6373, 0.5251]
+Val_Loss: 0.756791, Val_Acc: 0.500000
+
+Epoch #019, Train_Loss: [0.6269, 0.4682]
+Val_Loss: 0.741827, Val_Acc: 0.500000
+
+Epoch #020, Train_Loss: [0.6047, 0.6170]
+Val_Loss: 0.729631, Val_Acc: 0.500000
+
+Epoch #021, Train_Loss: [0.6079, 0.5983]
+Val_Loss: 0.716682, Val_Acc: 0.500000
+
+Epoch #022, Train_Loss: [0.5951, 0.6970]
+Val_Loss: 0.703940, Val_Acc: 0.500000
+
+Epoch #023, Train_Loss: [0.5875, 0.7449]
+Val_Loss: 0.691682, Val_Acc: 0.500000
+
+Epoch #024, Train_Loss: [0.6024, 0.5925]
+Val_Loss: 0.683989, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #025, Train_Loss: [0.6029, 0.6597]
+Val_Loss: 0.680183, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #026, Train_Loss: [0.6220, 0.5473]
+Val_Loss: 0.678853, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #027, Train_Loss: [0.6134, 0.5724]
+Val_Loss: 0.681431, Val_Acc: 0.500000
+
+Epoch #028, Train_Loss: [0.5941, 0.6506]
+Val_Loss: 0.687389, Val_Acc: 0.500000
+
+Epoch #029, Train_Loss: [0.5964, 0.5458]
+Val_Loss: 0.696327, Val_Acc: 0.500000
+
+Epoch #030, Train_Loss: [0.5967, 0.5758]
+Val_Loss: 0.707888, Val_Acc: 0.500000
+
+Epoch #031, Train_Loss: [0.5998, 0.5779]
+Val_Loss: 0.715639, Val_Acc: 0.500000
+
+Epoch #032, Train_Loss: [0.5992, 0.5016]
+Val_Loss: 0.718158, Val_Acc: 0.500000
+
+Epoch #033, Train_Loss: [0.6014, 0.5743]
+Val_Loss: 0.712133, Val_Acc: 0.500000
+
+Epoch #034, Train_Loss: [0.5777, 0.6261]
+Val_Loss: 0.694298, Val_Acc: 0.500000
+
+Epoch #035, Train_Loss: [0.5927, 0.5040]
+Val_Loss: 0.674541, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #036, Train_Loss: [0.5601, 0.6865]
+Val_Loss: 0.658708, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #037, Train_Loss: [0.5913, 0.5046]
+Val_Loss: 0.648509, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #038, Train_Loss: [0.6007, 0.4971]
+Val_Loss: 0.647133, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #039, Train_Loss: [0.5756, 0.5769]
+Val_Loss: 0.652503, Val_Acc: 0.500000
+
+Epoch #040, Train_Loss: [0.5720, 0.5525]
+Val_Loss: 0.657479, Val_Acc: 0.500000
+
+Epoch #041, Train_Loss: [0.5461, 0.7210]
+Val_Loss: 0.647024, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #042, Train_Loss: [0.5742, 0.5087]
+Val_Loss: 0.627407, Val_Acc: 0.500000
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #043, Train_Loss: [0.5527, 0.5873]
+Val_Loss: 0.614087, Val_Acc: 0.555556
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #044, Train_Loss: [0.5527, 0.5872]
+Val_Loss: 0.605273, Val_Acc: 0.611111
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #045, Train_Loss: [0.5663, 0.5426]
+Val_Loss: 0.600627, Val_Acc: 0.666667
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #046, Train_Loss: [0.5711, 0.4493]
+Val_Loss: 0.603016, Val_Acc: 0.666667
+
+Epoch #047, Train_Loss: [0.5657, 0.4406]
+Val_Loss: 0.613660, Val_Acc: 0.555556
+
+Epoch #048, Train_Loss: [0.5282, 0.6290]
+Val_Loss: 0.608203, Val_Acc: 0.666667
+
+Epoch #049, Train_Loss: [0.5636, 0.5034]
+Val_Loss: 0.577182, Val_Acc: 0.722222
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #050, Train_Loss: [0.5185, 0.6713]
+Val_Loss: 0.566292, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #051, Train_Loss: [0.5572, 0.4807]
+Val_Loss: 0.562738, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #052, Train_Loss: [0.5604, 0.4046]
+Val_Loss: 0.560745, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #053, Train_Loss: [0.5111, 0.6816]
+Val_Loss: 0.571070, Val_Acc: 0.777778
+
+Epoch #054, Train_Loss: [0.5203, 0.6634]
+Val_Loss: 0.557742, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #055, Train_Loss: [0.5346, 0.4953]
+Val_Loss: 0.544649, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #056, Train_Loss: [0.5258, 0.6264]
+Val_Loss: 0.540148, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #057, Train_Loss: [0.5606, 0.4284]
+Val_Loss: 0.535189, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #058, Train_Loss: [0.5264, 0.5702]
+Val_Loss: 0.536159, Val_Acc: 0.777778
+
+Epoch #059, Train_Loss: [0.5050, 0.5842]
+Val_Loss: 0.540052, Val_Acc: 0.777778
+
+Epoch #060, Train_Loss: [0.5258, 0.5457]
+Val_Loss: 0.528997, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #061, Train_Loss: [0.4750, 0.7416]
+Val_Loss: 0.514932, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #062, Train_Loss: [0.5041, 0.5985]
+Val_Loss: 0.509046, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #063, Train_Loss: [0.5226, 0.6254]
+Val_Loss: 0.505800, Val_Acc: 0.833333
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #064, Train_Loss: [0.5323, 0.6083]
+Val_Loss: 0.500230, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #065, Train_Loss: [0.5326, 0.5181]
+Val_Loss: 0.505615, Val_Acc: 0.777778
+
+Epoch #066, Train_Loss: [0.5098, 0.4899]
+Val_Loss: 0.526387, Val_Acc: 0.777778
+
+Epoch #067, Train_Loss: [0.5436, 0.4423]
+Val_Loss: 0.537486, Val_Acc: 0.777778
+
+Epoch #068, Train_Loss: [0.5643, 0.3777]
+Val_Loss: 0.532428, Val_Acc: 0.777778
+
+Epoch #069, Train_Loss: [0.5312, 0.4582]
+Val_Loss: 0.520710, Val_Acc: 0.777778
+
+Epoch #070, Train_Loss: [0.5110, 0.4666]
+Val_Loss: 0.505990, Val_Acc: 0.777778
+
+Epoch #071, Train_Loss: [0.4969, 0.5563]
+Val_Loss: 0.493781, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #072, Train_Loss: [0.5094, 0.3637]
+Val_Loss: 0.489671, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #073, Train_Loss: [0.5053, 0.5591]
+Val_Loss: 0.491993, Val_Acc: 0.777778
+
+Epoch #074, Train_Loss: [0.4990, 0.5326]
+Val_Loss: 0.494904, Val_Acc: 0.777778
+
+Epoch #075, Train_Loss: [0.5450, 0.3823]
+Val_Loss: 0.495477, Val_Acc: 0.777778
+
+Epoch #076, Train_Loss: [0.5326, 0.3680]
+Val_Loss: 0.501847, Val_Acc: 0.777778
+
+Epoch #077, Train_Loss: [0.4819, 0.7126]
+Val_Loss: 0.501332, Val_Acc: 0.777778
+
+Epoch #078, Train_Loss: [0.4849, 0.6652]
+Val_Loss: 0.485401, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #079, Train_Loss: [0.4937, 0.5254]
+Val_Loss: 0.481203, Val_Acc: 0.777778
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+
+Epoch #080, Train_Loss: [0.4860, 0.6593]
+Val_Loss: 0.484042, Val_Acc: 0.777778
+
+Epoch #081, Train_Loss: [0.5498, 0.4237]
+Val_Loss: 0.484952, Val_Acc: 0.777778
+
+Epoch #082, Train_Loss: [0.4913, 0.5874]
+Val_Loss: 0.497113, Val_Acc: 0.777778
+
+Epoch #083, Train_Loss: [0.4942, 0.6388]
+Val_Loss: 0.523947, Val_Acc: 0.777778
+
+Epoch #084, Train_Loss: [0.5423, 0.3417]
+Val_Loss: 0.541545, Val_Acc: 0.777778
+
+Epoch #085, Train_Loss: [0.5513, 0.4867]
+Val_Loss: 0.544404, Val_Acc: 0.777778
+
+Epoch #086, Train_Loss: [0.4998, 0.6533]
+Val_Loss: 0.524186, Val_Acc: 0.777778
+
+Epoch #087, Train_Loss: [0.4966, 0.5610]
+Val_Loss: 0.501140, Val_Acc: 0.777778
+
+Epoch #088, Train_Loss: [0.4941, 0.5137]
+Val_Loss: 0.493030, Val_Acc: 0.777778
+
+Epoch #089, Train_Loss: [0.5079, 0.5906]
+Val_Loss: 0.494577, Val_Acc: 0.777778
+
+Epoch #090, Train_Loss: [0.5133, 0.6352]
+Val_Loss: 0.494166, Val_Acc: 0.777778
+
+Epoch #091, Train_Loss: [0.5376, 0.4674]
+Val_Loss: 0.490120, Val_Acc: 0.777778
+
+Epoch #092, Train_Loss: [0.5178, 0.5188]
+Val_Loss: 0.494083, Val_Acc: 0.777778
+
+Epoch #093, Train_Loss: [0.4835, 0.5801]
+Val_Loss: 0.508248, Val_Acc: 0.777778
+
+Epoch #094, Train_Loss: [0.4747, 0.7327]
+Val_Loss: 0.517127, Val_Acc: 0.777778
+
+Epoch #095, Train_Loss: [0.4961, 0.5584]
+Val_Loss: 0.512483, Val_Acc: 0.777778
+
+Epoch #096, Train_Loss: [0.4906, 0.6566]
+Val_Loss: 0.498453, Val_Acc: 0.777778
+
+Epoch #097, Train_Loss: [0.4950, 0.5843]
+Val_Loss: 0.492970, Val_Acc: 0.777778
+
+Epoch #098, Train_Loss: [0.4925, 0.5831]
+Val_Loss: 0.495252, Val_Acc: 0.777778
+
+Epoch #099, Train_Loss: [0.4844, 0.6958]
+Val_Loss: 0.498502, Val_Acc: 0.777778
+
+Epoch #100, Train_Loss: [0.5138, 0.4959]
+Val_Loss: 0.503761, Val_Acc: 0.777778
+
+Epoch #101, Train_Loss: [0.5066, 0.5011]
+Val_Loss: 0.512373, Val_Acc: 0.777778
+
+Epoch #102, Train_Loss: [0.5447, 0.2610]
+Val_Loss: 0.527697, Val_Acc: 0.777778
+
+Epoch #103, Train_Loss: [0.4968, 0.5841]
+Val_Loss: 0.544142, Val_Acc: 0.777778
+
+Epoch #104, Train_Loss: [0.5175, 0.4516]
+Val_Loss: 0.543139, Val_Acc: 0.777778
+
+Epoch #105, Train_Loss: [0.5112, 0.5746]
+Val_Loss: 0.525931, Val_Acc: 0.777778
+
+Epoch #106, Train_Loss: [0.5085, 0.4627]
+Val_Loss: 0.503958, Val_Acc: 0.777778
+
+Epoch #107, Train_Loss: [0.4890, 0.5944]
+Val_Loss: 0.491648, Val_Acc: 0.777778
+
+Epoch #108, Train_Loss: [0.5188, 0.4473]
+Val_Loss: 0.490077, Val_Acc: 0.777778
+
+Epoch #109, Train_Loss: [0.4908, 0.5874]
+Val_Loss: 0.489118, Val_Acc: 0.777778
+
+Epoch #110, Train_Loss: [0.4934, 0.5623]
+Val_Loss: 0.491609, Val_Acc: 0.777778
+
+Epoch #111, Train_Loss: [0.4825, 0.5476]
+Val_Loss: 0.501304, Val_Acc: 0.777778
+
+Epoch #112, Train_Loss: [0.4703, 0.5799]
+Val_Loss: 0.514790, Val_Acc: 0.777778
+
+Epoch #113, Train_Loss: [0.4627, 0.7137]
+Val_Loss: 0.519953, Val_Acc: 0.722222
+
+Epoch #114, Train_Loss: [0.4865, 0.6873]
+Val_Loss: 0.513533, Val_Acc: 0.777778
+
+Epoch #115, Train_Loss: [0.5076, 0.3883]
+Val_Loss: 0.508287, Val_Acc: 0.777778
+
+Epoch #116, Train_Loss: [0.4989, 0.3884]
+Val_Loss: 0.508401, Val_Acc: 0.777778
+
+Epoch #117, Train_Loss: [0.5111, 0.4278]
+Val_Loss: 0.510910, Val_Acc: 0.777778
+
+Epoch #118, Train_Loss: [0.4741, 0.5858]
+Val_Loss: 0.510331, Val_Acc: 0.777778
+
+Epoch #119, Train_Loss: [0.4749, 0.5667]
+Val_Loss: 0.505842, Val_Acc: 0.777778
+
+Epoch #120, Train_Loss: [0.5011, 0.4406]
+Val_Loss: 0.500249, Val_Acc: 0.777778
+
+********** TEST START **********
+Reload Best Model
+The current best model is saved in: ******** outputs/MUTAG_Glo/model.pth *********
+TEST :: Test_Acc: 0.800000
