@@ -32,3 +32,5 @@ python main.py --exp_name=DD_Glo --dataset=DD --model=SAGPooling_Global
 ```python
 python main.py --exp_name=PROTEINS_Hie --dataset=PROTEINS --model=SAGPooling_Hierarchical
 ```
+
+3.实验结果（8:1:1划分数据集，只做了一次实验）
