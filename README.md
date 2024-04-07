@@ -20,4 +20,15 @@
 | Test batch size | 1 |
 | Weight decay | 0.0001 |
 
-2.
+2.运行程序
+模型：SAGPooling_Global
+数据集：DD
+```python
+python main.py --exp_name=DD_Glo --dataset=DD --model=SAGPooling_Global
+```
+
+模型：SAGPooling_Hierarchical
+数据集：PROTEINS
+```python
+python main.py --exp_name=PROTEINS_Hie --dataset=PROTEINS --model=SAGPooling_Hierarchical
+```
