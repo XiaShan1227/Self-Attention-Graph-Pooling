@@ -38,3 +38,5 @@ python main.py --exp_name=PROTEINS_Hie --dataset=PROTEINS --model=SAGPooling_Hie
 |:-------------:|:-------------:|:------------:|:------------:|:------------:|:------------:|
 | **SAGPooling_Global**       |  73.11  |  80.00  |  69.10  |  74.40  |  73.21  |
 | **SAGPooling_Hierarchical** |  67.23  |  70.00  |  66.18  |  70.77  |  69.64  |
+
+Code Framework Reference: [SAGPooling](https://github.com/inyeoplee77/SAGPool)
